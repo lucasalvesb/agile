@@ -5,7 +5,7 @@ const Header = () => {
 
 return (
   <>
-  <header>
+  <header className="header-main">
     <div className="header-left">
       <span><strong>Agile Content</strong> Frontend test</span>
     </div>
