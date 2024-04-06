@@ -1,0 +1,50 @@
+.input-container {
+  display: flex;
+  min-height: 3rem;
+  border: 1.4px solid #dfe1e5;
+  border-radius: 20px;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  flex: 1;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  margin-left: 8px;
+  min-width: 180px;
+  max-width: 580px;
+}
+
+.input-container > svg {
+  width: 20px;
+}
+
+.clear-btn {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.clear-btn:hover {
+  box-shadow: none;
+  border: none;
+}
+
+.clear-btn:hover:enabled {
+  box-shadow: none;
+  border: none;
+}
