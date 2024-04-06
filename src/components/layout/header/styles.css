@@ -3,6 +3,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid #F8F8F9;
+}
+
+.header-bottom {
+  border-bottom: 1px solid #F0F2F3; 
 }
 
 .header-left {
@@ -31,8 +36,15 @@ header {
   background-color: #f2f2f2;
 }
 
+svg {
+  width: 1.75rem;
+  color: #5f6368;
+  opacity: 1;
+  fill: currentColor;
+}
+
 .profile-picture {
-  width: 30px; 
-  height: 30px; 
+  width: 2rem; 
+  height: 2rem; 
   border-radius: 50%; 
 }

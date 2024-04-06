@@ -4,6 +4,7 @@ import "./styles.css"
 const Header = () => {
 
 return (
+  <>
   <header>
     <div className="header-left">
       <span><strong>Agile Content</strong> Frontend test</span>
@@ -17,6 +18,8 @@ return (
       <img className="profile-picture" src={ProfilePicure} />
     </div>
   </header>
+      <div className="header-bottom"></div>
+  </>
 )
 }
 
