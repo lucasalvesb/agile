@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-left {
+  flex: 1; 
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrap:hover {
+  background-color: #f2f2f2;
+}
+
+.profile-picture {
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+}

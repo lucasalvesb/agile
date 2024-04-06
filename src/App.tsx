@@ -1,8 +1,9 @@
 import './App.css'
+import Header from './components/layout/header'
 
 const App = () => {
   return (
-   <h1> hi </h1> 
+   <Header />
   )
 }
 
