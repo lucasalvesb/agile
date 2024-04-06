@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './styles.css'
+import { InputProps } from '../../types'
 
 
 const SearchIcon = () => {
@@ -25,11 +26,7 @@ const ClearButton: React.FC<{ onClick: (evt: React.MouseEvent<HTMLButtonElement,
   )
 }
 
-interface InputProps {
-  onKeyPress?: (evt: React.KeyboardEvent<HTMLInputElement>) => void;
-  onChange: (evt: React.ChangeEvent<HTMLInputElement>) => void;
-  value: string;
-}
+
 
 const Input: React.FC<InputProps> = ({ onKeyPress, onChange, value, ...props }) => {
   const [text, setText] = useState('')
