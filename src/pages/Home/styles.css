@@ -18,6 +18,8 @@ img {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .input-wrapper {
@@ -41,7 +43,7 @@ img {
 
 button:hover:enabled {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-  border: 1px solid #dadce0;
+  border: 1px solid #f8f8f8;
 }
 
 button:disabled {
