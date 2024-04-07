@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface InputProps {
   onKeyPress?: (evt: React.KeyboardEvent<HTMLInputElement>) => void;
   onChange: (evt: React.ChangeEvent<HTMLInputElement>) => void;
@@ -19,4 +21,22 @@ export interface ApiInterface {
 
 export interface ApiProps {
   animals: ApiInterface;
+}
+
+export interface ApiProviderProps {
+  children: ReactNode;
+}
+
+export enum SearchState {
+  EMPTY,
+  INVALID
+}
+
+export interface Result {
+  type: string;
+  id: number;
+  url: string;
+  title: string;
+  description: string;
+  image: string;
 }

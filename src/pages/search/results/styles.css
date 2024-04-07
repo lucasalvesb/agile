@@ -1,0 +1,28 @@
+  .results-container {
+    width: 50%;
+    margin-right: auto;
+  }
+
+  .results-container > li + li {
+    margin-top: 1.5rem;
+  }
+
+  .result-item {
+    list-style-type: none;
+  }
+
+  .result-item>a {
+    font-size: 0.7rem;
+  }
+
+  .result-item>h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.25rem 0;
+    color: #1a0dab;
+    cursor: pointer;
+  }
+
+  .result-item>span {
+    font-size: 0.8rem;
+  }

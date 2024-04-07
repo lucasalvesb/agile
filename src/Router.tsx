@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout'
-import Home from './pages/Home'
+import Home from './pages/home'
+import Search from './pages/search'
 
 
 const Router = () => {
@@ -8,6 +9,7 @@ const Router = () => {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<Home />} />
+        <Route path='/search' element={<Search />} />
       </Route>
     </Routes>
   )
