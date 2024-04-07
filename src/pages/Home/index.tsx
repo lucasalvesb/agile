@@ -34,7 +34,8 @@ const Home = () => {
           <Input
           value='' 
           onChange={handleChange} 
-          onKeyPress={handlePressEnter} />
+          onKeyPress={handlePressEnter}
+          style={{ minHeight: 36, minWidth: 380 }} />
         </div>
         <button className='search-btn' onClick={handleSearch} disabled={text.length === 0} type='button'>Buscar</button>
       </div>

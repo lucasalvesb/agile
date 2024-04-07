@@ -1,6 +1,10 @@
   .results-container {
     width: 50%;
     margin-right: auto;
+    
+    @media (max-width: 960px) {
+      width: 100%;
+    }
   }
 
   .results-container > li + li {

@@ -58,7 +58,7 @@ return (
     :
     <div className="header-left">
       <img className='google-logo' onClick={handleMainPage} src={GoogleLogo} />
-      <Input style={{ minHeight: 36, minWidth: 320 }} value={text} onKeyPress={handlePressEnter} onChange={handleChange} />
+      <Input style={{ minHeight: 36, minWidth: 280 }} value={text} onKeyPress={handlePressEnter} onChange={handleChange} />
     </div>
     }
     <div className="header-right">

@@ -9,4 +9,8 @@ footer {
   color: #70757a;
 
   padding: 0px 24px;
+  
+    @media (max-width: 380px) {
+    padding: 0px;
+  }
 }
