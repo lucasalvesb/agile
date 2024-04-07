@@ -3,3 +3,12 @@ export interface InputProps {
   onChange: (evt: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
 }
+
+export interface AnimalData {
+  type: string;
+  id: number;
+  url: string;
+  title: string;
+  description: string;
+  image: string;
+}
