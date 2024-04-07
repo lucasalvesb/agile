@@ -28,10 +28,13 @@ const Home = () => {
 
   return (
     <div className='home-container'>
-      <img src={GoogleLogo} />
+      <img className="google-logo" src={GoogleLogo} />
       <div className='search-container'>
         <div className='input-wrapper'>
-          <Input value='' onChange={handleChange} onKeyPress={handlePressEnter} />
+          <Input
+          value='' 
+          onChange={handleChange} 
+          onKeyPress={handlePressEnter} />
         </div>
         <button className='search-btn' onClick={handleSearch} disabled={text.length === 0} type='button'>Buscar</button>
       </div>

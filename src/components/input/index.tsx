@@ -28,7 +28,7 @@ const ClearButton: React.FC<{ onClick: (evt: React.MouseEvent<HTMLButtonElement,
 
 
 
-const Input: React.FC<InputProps> = ({ onKeyPress, onChange, value, ...props }) => {
+const Input: React.FC<InputProps> = ({ onKeyPress, onChange, value, style, ...props }) => {
   const [text, setText] = useState('')
   const handleClearText = () => {
     setText('')
@@ -47,7 +47,7 @@ const Input: React.FC<InputProps> = ({ onKeyPress, onChange, value, ...props }) 
   }
 
   return (
-    <div className='input-container' {...props}>
+    <div className='input-container' style={style} {...props}>
       <SearchIcon />
       <input
         value={text}
@@ -56,7 +56,7 @@ const Input: React.FC<InputProps> = ({ onKeyPress, onChange, value, ...props }) 
         data-testid='input' />
       {
         text.length > 0 &&
-        < ClearButton onClick={handleClearText} />
+        <ClearButton onClick={handleClearText} />
       }
     </div>
   )

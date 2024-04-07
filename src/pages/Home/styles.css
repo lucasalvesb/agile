@@ -8,8 +8,8 @@
   margin-bottom: auto;
 }
 
-img {
-  width: 20rem;
+.home-container > img {
+  max-width: 20rem;
 }
 
 .search-container {

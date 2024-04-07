@@ -1,14 +1,66 @@
 import ProfilePicure from "../../../assets/profile_icon.png"
+import GoogleLogo from "../../../assets/google_logo.svg"
+import Input from '../../Input'
+
+
+import { useMemo, useEffect, useState, ChangeEvent, KeyboardEvent } from 'react'
+import { useLocation, useNavigate } from "react-router-dom"
+
 import "./styles.css"
 
+
 const Header = () => {
+
+  const [text, setText] = useState("")
+  const location = useLocation()
+  const navigate = useNavigate()
+  const isSearchPage = useMemo(() => {
+    if (location.pathname === '/search') return true
+    return false
+  }, [location.pathname])
+
+  useEffect(() => {
+    const query = new URLSearchParams(location.search).get('q')
+    if (query) {
+      setText(query)
+    }
+  }, [location])
+
+
+  const handleMainPage = () => {
+    navigate({
+      pathname: '/'
+    })
+  }
+
+  const handlePressEnter = (evt: KeyboardEvent<HTMLInputElement>) => {
+    const inputValue = (evt.target as HTMLInputElement).value;
+    if (evt.key === 'Enter') {
+      navigate({
+        pathname: '/search',
+        search: `?q=${inputValue}`
+      })
+    }
+  }
+
+  const handleChange = (evt: ChangeEvent<HTMLInputElement>) => {
+    if (evt && evt.target) {
+      setText(evt.target.value)
+    }
+  }
 
 return (
   <>
   <header className="header-main">
+    {
+    !isSearchPage ?
+    <span><strong>Agile Content</strong> Frontend test</span>
+    :
     <div className="header-left">
-      <span><strong>Agile Content</strong> Frontend test</span>
+      <img className='google-logo' onClick={handleMainPage} src={GoogleLogo} />
+      <Input style={{ minHeight: 36, minWidth: 320 }} value={text} onKeyPress={handlePressEnter} onChange={handleChange} />
     </div>
+    }
     <div className="header-right">
       <div className="icon-wrap">
         <svg className="gb_i" focusable="false" viewBox="0 0 24 24">
