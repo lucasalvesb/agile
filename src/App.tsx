@@ -6,6 +6,7 @@ import { ApiProvider } from './hooks/useAnimalApi'
 // TODO media queries for responsive design
 // TODO search function going to the header after search and maintaining functionality
 // TODO double check requirements
+// TODO images need to be wider 
 
 
 const App = () => {
