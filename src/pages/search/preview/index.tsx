@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import { Result } from '../../../types/index'
+import { useState, MouseEvent } from 'react'
+import { PreviewProps } from '../../../types/index'
 
 import './styles.css'
 
-interface PreviewProps {
-  result: Result;
-  onSelectItem: (value: Result | null) => void;
-}
+
 
 const Preview: React.FC<PreviewProps> = ({ result, onSelectItem }) => {
   const [loaded, setLoaded] = useState(false)
 
-  const handleClickContent = (evt) => {
+  const handleClickContent = (evt: MouseEvent<HTMLDivElement>) => {
     evt.stopPropagation()
   }
 

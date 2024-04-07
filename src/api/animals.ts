@@ -1,7 +1,7 @@
 import { AnimalModule, faker } from '@faker-js/faker';
 import { AnimalData } from '../types';
 
-const getImage = (): string => faker.image.animals(644, 362, true);
+const getImage = (): string => faker.image.urlLoremFlickr({ category: 'animals' });
 const getType = (): string => faker.animal.type();
 const getUrl = (): string => faker.internet.url();
 const getText = (): string => faker.lorem.sentences();
@@ -10,7 +10,7 @@ const getTitle = (type: string): string => faker.animal[type as keyof AnimalModu
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const generateAnimalData = async (): Promise<AnimalData[]> => {
-  await delay(1000); 
+  await delay(2000); 
   
   const animalDataPromises = [...new Array(100)].map(async (_, index) => {
     const type = getType();

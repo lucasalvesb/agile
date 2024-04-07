@@ -40,3 +40,13 @@ export interface Result {
   description: string;
   image: string;
 }
+
+export interface EmptyStateProps {
+  state: SearchState;
+  text: string | undefined;
+}
+
+export interface PreviewProps {
+  result: Result;
+  onSelectItem: (value: Result | null) => void;
+}

@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
+import { Result, SearchState } from '../../types'
 import { useLocation } from 'react-router-dom'
-import { Result } from '../../types'
 import { useAnimalApi } from '../../hooks/useAnimalApi'
 
-import './styles.css'
 import Results from './Results'
 import Preview from './Preview'
 import Loading from './Loading'
+import Empty from './Empty'
+
+import './styles.css'
 
 const Search = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -37,15 +39,19 @@ const Search = () => {
         {
           (isLoading || previousText != query) ?
             <Loading /> :
-          <>
-        <Results
-        results={results}
-        onSelect={(result: Result) => setSelectedItem(result)} />
-        {
-          selectedItem &&
-          <Preview result={selectedItem} onSelectItem={setSelectedItem}/>
-        }
-        </>
+            (query === '' || results.length == 0) ?
+              <Empty
+                state={query === '' ? SearchState.INVALID : SearchState.EMPTY} 
+                text={query}/> :
+              <>
+                <Results
+                  results={results}
+                  onSelect={(result: Result) => setSelectedItem(result)} />
+                {
+                  selectedItem &&
+                  <Preview result={selectedItem} onSelectItem={setSelectedItem}/>
+                }
+              </>
         }
       </div>
     </div>
