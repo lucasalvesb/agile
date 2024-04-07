@@ -7,7 +7,11 @@ const getUrl = (): string => faker.internet.url();
 const getText = (): string => faker.lorem.sentences();
 const getTitle = (type: string): string => faker.animal[type as keyof AnimalModule]();
 
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 const generateAnimalData = async (): Promise<AnimalData[]> => {
+  await delay(1000); 
+  
   const animalDataPromises = [...new Array(100)].map(async (_, index) => {
     const type = getType();
     return {

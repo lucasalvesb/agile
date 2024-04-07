@@ -1,0 +1,14 @@
+.loading-list {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.loading-list > li + li {
+  margin-top: 2rem;
+}
+
+.loading-item {
+  width: 100%;
+}

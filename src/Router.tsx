@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout'
-import Home from './pages/home'
-import Search from './pages/search'
+import Home from './pages/Home'
+import Search from './pages/Search'
 
 
 const Router = () => {
