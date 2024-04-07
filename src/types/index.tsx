@@ -12,3 +12,11 @@ export interface AnimalData {
   description: string;
   image: string;
 }
+
+export interface ApiInterface {
+  get: () => Promise<AnimalData[]>;
+}
+
+export interface ApiProps {
+  animals: ApiInterface;
+}
