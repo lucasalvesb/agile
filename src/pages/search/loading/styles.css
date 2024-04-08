@@ -12,3 +12,8 @@
 .loading-item {
   width: 100%;
 }
+
+.empty {
+  color: #fff;
+  margin-top: -30px;
+}

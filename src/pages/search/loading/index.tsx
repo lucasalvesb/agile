@@ -1,11 +1,12 @@
-import SkeletonLoading from '../../../components/Skeleton'
+import Skeleton from '../../../components/Skeleton'
 import './styles.css'
 
 const Loading = () => {
   return (
     <ul className='loading-list'>
+      <li className='empty'>EXAMPLE EXAMPLE EXAMPLE EXAMPLE</li>
       {Array(5).fill(0).map((_, index) => <li key={`loading-item-${index}`} className='loading-item'>
-        <SkeletonLoading />
+        <Skeleton />
       </li>)
       }
     </ul>
