@@ -2,7 +2,7 @@ import './styles.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer data-testid="footer">
       <span><strong>© Google 2021</strong></span>
       <span><strong>version: 0.1.0</strong></span>
     </footer>

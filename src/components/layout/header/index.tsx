@@ -51,7 +51,7 @@ const Header = () => {
 
 return (
   <>
-  <header className="header-main">
+  <header className="header-main" data-testid="header">
     {
     !isSearchPage ?
     <span><strong>Agile Content</strong> Frontend test</span>

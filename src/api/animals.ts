@@ -9,7 +9,7 @@ const getTitle = (type: string): string => faker.animal[type as keyof AnimalModu
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-const generateAnimalData = async (): Promise<AnimalData[]> => {
+export const generateAnimalData = async (): Promise<AnimalData[]> => {
   await delay(2000); 
   
   const animalDataPromises = [...new Array(100)].map(async (_, index) => {

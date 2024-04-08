@@ -43,5 +43,9 @@
       "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js"
     },
     "setupFilesAfterEnv": ["<rootDir>/src/__tests__/setupTests.js"]
-  }
+  },
+  "transformIgnorePatterns": [
+    "/node_modules/",
+    "\\.(png|jpg|jpeg|gif|svg)$"
+  ]
 }
