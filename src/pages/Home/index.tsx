@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import Input from '../../components/Input'
+import Input from '../../components/input'
 import GoogleLogo from '../../assets/google_logo.svg'
 import './styles.css'
 
