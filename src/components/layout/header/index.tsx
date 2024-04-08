@@ -1,6 +1,6 @@
 import ProfilePicure from "../../../assets/profile_icon.png"
 import GoogleLogo from "../../../assets/google_logo.svg"
-import Input from '../../Input'
+import Input from '../../input'
 
 
 import { useMemo, useEffect, useState, ChangeEvent, KeyboardEvent } from 'react'

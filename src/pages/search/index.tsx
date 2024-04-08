@@ -3,10 +3,10 @@ import { Result, SearchState } from '../../types'
 import { useLocation } from 'react-router-dom'
 import { useAnimalApi } from '../../hooks/useAnimalApi'
 
-import Results from './Results'
-import Preview from './Preview'
-import Loading from './Loading'
-import Empty from './Empty'
+import Results from './results'
+import Preview from './preview'
+import Loading from './loading'
+import Empty from './empty'
 
 import './styles.css'
 
