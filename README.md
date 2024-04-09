@@ -6,7 +6,7 @@ I'd probably have implemented more tests;
 
 I'd have implemented skeleton loading for the card;
 
-I'd have implemented animations for the card showing up and a very subtle animation if you hoveded your mouse over it;
+I'd have implemented animations for the card showing up and a very subtle animation if you hovered your mouse over it;
 
 I'd have implemented an auto-complete, so when the user typed ''ca'' they'd suggest cat, ''d'', they'd suggest dog, etc.
 
