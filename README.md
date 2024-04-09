@@ -14,13 +14,14 @@ I'd have implemented an auto-complete, so when the user typed ''ca'' they'd sugg
 
 Node (most recent LTS version)
 
-### Instructions
+## Instructions
 
-A) Clone the repo
-B) npm install
-C) npm run test (to run the tests)
-D) npm run dev (to run the application)
-E) open the application. Normally it's on http://localhost:5173/
+
+### Clone the repo
+### npm install
+### npm run test (to run the tests)
+### npm run dev (to run the application)
+### open the application. Normally it's on http://localhost:5173/
 
 ## Result
 
