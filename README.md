@@ -10,7 +10,7 @@ I'd have implemented animations for the card showing up and a very subtle animat
 
 I'd have implemented an auto-complete, so when the user typed ''ca'' they'd suggest cat, ''d'', they'd suggest dog, etc.
 
-### What do I need to run this?
+## What do I need to run this?
 
 Node (most recent LTS version)
 
