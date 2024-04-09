@@ -17,11 +17,11 @@ Node (most recent LTS version)
 ## Instructions
 
 
-### Clone the repo
-### npm install
-### npm run test (to run the tests)
-### npm run dev (to run the application)
-### open the application. Normally it's on http://localhost:5173/
+### 1 - clone the repo
+### 2 - npm install
+### 3 - npm run test (to run the tests)
+### 4 - npm run dev (to run the application)
+### 5 - open the application. Normally it's on http://localhost:5173/
 
 ## Result
 
