@@ -41,9 +41,10 @@ Node (most recent LTS version)
 ![Card for the image and info](https://github.com/lucasalvesb/agile/assets/71532408/ac203215-eb9b-4ad0-9880-26fb1f81e3e5)
 
 ### Front page on mobile
-![Front page on mobile](https://github.com/lucasalvesb/agile/assets/71532408/eee4268e-7a26-4cee-ad18-0caf766aab4a | width=300)
+![Front page on mobile](https://github.com/lucasalvesb/agile/assets/71532408/eee4268e-7a26-4cee-ad18-0caf766aab4a)
 
 ### Card on mobile
-![Card on mobile](https://github.com/lucasalvesb/agile/assets/71532408/08c497b7-71ff-434a-a767-fe6f9d3e83e9 | width=300)
+![Card on mobile](https://github.com/lucasalvesb/agile/assets/71532408/9b76d5a0-d551-48e9-8dc9-9a40832c0642)
+
 
 
