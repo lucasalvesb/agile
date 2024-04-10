@@ -29,6 +29,7 @@ const Search = () => {
   }
 
   useEffect(() => {
+    setIsLoading(true)
     setSelectedItem(null)
     fetchData()
   }, [location])
